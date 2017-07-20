@@ -7,21 +7,21 @@ public class FizzBuzzTest {
 
     FizzBuzz fizzBuzz = new FizzBuzz();
 
-    @Test @Ignore
+    @Test
     public void should_say_1_when_number_is_1() {
         String actualResult = fizzBuzz.say(1);
         String expectedResult = "1";
         assertEquals(expectedResult, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void should_say_2_when_number_is_2() {
         String actualResult = fizzBuzz.say(2);
         String expectedResult = "2";
         assertEquals(expectedResult, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void should_say_Fizz_when_number_is_3() {
         String actualResult = fizzBuzz.say(3);
         String expectedResult = "Fizz";
