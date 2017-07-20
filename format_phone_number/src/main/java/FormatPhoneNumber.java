@@ -23,6 +23,24 @@ public class FormatPhoneNumber {
             return result = result.substring(0,result.length()-1);
         }
 
+        String[] arr = result.split("-");
+        if(arr[arr.length-1].length() == 1){
+            result = "";
+            for (int i = 0; i < arr.length-1; i++) {
+                if( i == arr.length-2){
+                    result += arr[i].charAt(0);
+                    result += arr[i].charAt(1);
+                    result += "-";
+                    result += arr[i].charAt(2);
+                    result += arr[arr.length-1];
+                    break;
+                }
+                result += arr[i];
+                result += "-";
+            }
+            return result;
+        }
+
         return result;
 
     }
