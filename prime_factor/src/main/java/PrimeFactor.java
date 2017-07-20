@@ -7,6 +7,9 @@ public class PrimeFactor {
         if(number == 2){
             list.add(2);
         }
+        if(number == 3){
+            list.add(3);
+        }
         return list;
     }
 }
